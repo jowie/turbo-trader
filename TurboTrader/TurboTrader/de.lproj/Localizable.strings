@@ -16,7 +16,7 @@
 
 "button.submit" = "EINREICHEN";
 
-"alert.error" = "Resister Error";
-"alert.incomplete" = "Please complete all the fields before submitting.";
-"alert.done" = "Register Complete";
+"alert.error" = "Registerfehler";
+"alert.incomplete" = "Bitte füllen Sie alle Felder vor dem Absenden.";
+"alert.done" = "Registrieren Komplette";
 "alert.okay" = "Okay";
