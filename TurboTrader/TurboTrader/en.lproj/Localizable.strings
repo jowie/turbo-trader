@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  TurboTrader
+
+  Created by Joe Nash on 17/09/2014.
+  Copyright (c) 2014 Joe Nash. All rights reserved.
+*/
+
+"title.welcome" = "Welcome to\nTurboTrader";
+"button.signup" = "SIGN UP";
+
+"register.name" = "NAME";
+"register.dob" = "DATE OF BIRTH";
+"register.financial" = "Please provide detailed information about your financial stability and income.";
+"register.past" = "Please provide additional background information about your past.";
+
+"button.submit" = "SUBMIT";
+
+"alert.error" = "Resister Error";
+"alert.incomplete" = "Please complete all the fields before submitting.";
+"alert.done" = "Register Complete";
+"alert.okay" = "Okay";

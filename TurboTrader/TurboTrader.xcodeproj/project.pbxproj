@@ -22,6 +22,10 @@
 		3B54546319C9ABD9005A2E89 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B54544219C9ABD9005A2E89 /* UIKit.framework */; };
 		3B54546B19C9ABD9005A2E89 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3B54546919C9ABD9005A2E89 /* InfoPlist.strings */; };
 		3B54546D19C9ABD9005A2E89 /* TurboTraderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B54546C19C9ABD9005A2E89 /* TurboTraderTests.m */; };
+		3BE5989519C9B16B00E863D1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3BE5989719C9B16B00E863D1 /* Localizable.strings */; };
+		3BE5989B19C9B2E000E863D1 /* TTLocalizableLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE5989A19C9B2E000E863D1 /* TTLocalizableLabel.m */; };
+		3BE5989E19C9B33C00E863D1 /* TTLocalizableButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE5989D19C9B33C00E863D1 /* TTLocalizableButton.m */; };
+		3BE598A119C9B78100E863D1 /* TTRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE598A019C9B78100E863D1 /* TTRegisterViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,14 @@
 		3B54546819C9ABD9005A2E89 /* TurboTraderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TurboTraderTests-Info.plist"; sourceTree = "<group>"; };
 		3B54546A19C9ABD9005A2E89 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3B54546C19C9ABD9005A2E89 /* TurboTraderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TurboTraderTests.m; sourceTree = "<group>"; };
+		3BE5989619C9B16B00E863D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3BE5989819C9B1CD00E863D1 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3BE5989919C9B2E000E863D1 /* TTLocalizableLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTLocalizableLabel.h; sourceTree = "<group>"; };
+		3BE5989A19C9B2E000E863D1 /* TTLocalizableLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTLocalizableLabel.m; sourceTree = "<group>"; };
+		3BE5989C19C9B33C00E863D1 /* TTLocalizableButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTLocalizableButton.h; sourceTree = "<group>"; };
+		3BE5989D19C9B33C00E863D1 /* TTLocalizableButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTLocalizableButton.m; sourceTree = "<group>"; };
+		3BE5989F19C9B78100E863D1 /* TTRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTRegisterViewController.h; sourceTree = "<group>"; };
+		3BE598A019C9B78100E863D1 /* TTRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTRegisterViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,10 +128,10 @@
 			children = (
 				3B54544D19C9ABD9005A2E89 /* TTAppDelegate.h */,
 				3B54544E19C9ABD9005A2E89 /* TTAppDelegate.m */,
-				3B54545019C9ABD9005A2E89 /* Main_iPhone.storyboard */,
-				3B54545319C9ABD9005A2E89 /* Main_iPad.storyboard */,
-				3B54545619C9ABD9005A2E89 /* TTViewController.h */,
-				3B54545719C9ABD9005A2E89 /* TTViewController.m */,
+				3BE598A319C9B79000E863D1 /* Storyboards */,
+				3BE598A219C9B78800E863D1 /* ViewControllers */,
+				3BE598A419C9B79B00E863D1 /* Components */,
+				3BE5989719C9B16B00E863D1 /* Localizable.strings */,
 				3B54545919C9ABD9005A2E89 /* Images.xcassets */,
 				3B54544519C9ABD9005A2E89 /* Supporting Files */,
 			);
@@ -153,6 +165,37 @@
 				3B54546919C9ABD9005A2E89 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3BE598A219C9B78800E863D1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3B54545619C9ABD9005A2E89 /* TTViewController.h */,
+				3B54545719C9ABD9005A2E89 /* TTViewController.m */,
+				3BE5989F19C9B78100E863D1 /* TTRegisterViewController.h */,
+				3BE598A019C9B78100E863D1 /* TTRegisterViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3BE598A319C9B79000E863D1 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				3B54545019C9ABD9005A2E89 /* Main_iPhone.storyboard */,
+				3B54545319C9ABD9005A2E89 /* Main_iPad.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		3BE598A419C9B79B00E863D1 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				3BE5989919C9B2E000E863D1 /* TTLocalizableLabel.h */,
+				3BE5989A19C9B2E000E863D1 /* TTLocalizableLabel.m */,
+				3BE5989C19C9B33C00E863D1 /* TTLocalizableButton.h */,
+				3BE5989D19C9B33C00E863D1 /* TTLocalizableButton.m */,
+			);
+			name = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +258,7 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
 			);
 			mainGroup = 3B54543219C9ABD9005A2E89;
 			productRefGroup = 3B54543C19C9ABD9005A2E89 /* Products */;
@@ -232,6 +276,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BE5989519C9B16B00E863D1 /* Localizable.strings in Resources */,
 				3B54545519C9ABD9005A2E89 /* Main_iPad.storyboard in Resources */,
 				3B54545A19C9ABD9005A2E89 /* Images.xcassets in Resources */,
 				3B54545219C9ABD9005A2E89 /* Main_iPhone.storyboard in Resources */,
@@ -254,7 +299,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BE5989E19C9B33C00E863D1 /* TTLocalizableButton.m in Sources */,
 				3B54544F19C9ABD9005A2E89 /* TTAppDelegate.m in Sources */,
+				3BE5989B19C9B2E000E863D1 /* TTLocalizableLabel.m in Sources */,
+				3BE598A119C9B78100E863D1 /* TTRegisterViewController.m in Sources */,
 				3B54544B19C9ABD9005A2E89 /* main.m in Sources */,
 				3B54545819C9ABD9005A2E89 /* TTViewController.m in Sources */,
 			);
@@ -311,6 +359,15 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
+		3BE5989719C9B16B00E863D1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BE5989619C9B16B00E863D1 /* en */,
+				3BE5989819C9B1CD00E863D1 /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -321,7 +378,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -346,7 +403,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -360,7 +417,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -379,7 +436,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -471,6 +528,7 @@
 				3B54547219C9ABD9005A2E89 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B54547319C9ABD9005A2E89 /* Build configuration list for PBXNativeTarget "TurboTraderTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +537,7 @@
 				3B54547519C9ABD9005A2E89 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
